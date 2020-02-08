@@ -11,5 +11,6 @@ namespace NetWebApi.Models
         public string Name { get; set; }
         public string Email { get; set; }
         public byte[] Resume { get; set; }
+        public  Job  AppliedJOB {get;set;}
     }
 }
