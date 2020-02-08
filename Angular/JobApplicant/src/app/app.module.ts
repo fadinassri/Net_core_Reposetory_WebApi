@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigateComponent } from './navigate/navigate.component';
 import { JobsComponent } from './jobs/jobs.component';
+import { PostJobComponent } from './post-job/post-job.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigateComponent,
-    JobsComponent
+    JobsComponent,
+    PostJobComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

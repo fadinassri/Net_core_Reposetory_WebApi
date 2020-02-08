@@ -1,0 +1,16 @@
+<p>post-job works!</p>
+
+<form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="Form">
+<label for="JobTitle" >Job Title</label>
+<input type="text" name="JobTitle" formControlName="JobTitle" />
+</div>
+<div class="Form">
+    <label for="SalaryRange" >Salary Range </label>
+    <input type="text" name="SalaryRange" formControlName="SalaryRange" />
+ </div>
+<div>
+<input type="Submit" value="Add" /> 
+</div>
+</form>
+
