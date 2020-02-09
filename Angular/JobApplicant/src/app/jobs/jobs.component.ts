@@ -12,7 +12,9 @@ AllJobs: any ;
   constructor(private getData: GetDataService ) { }
 
   ngOnInit() {
-    this.AllJobs = this.getData.getAllJobs();
+    this.getData.getAllJobs().subscribe(data => {
+     this.AllJobs = data;
+    });
     console.log(this.AllJobs);
   }
 }

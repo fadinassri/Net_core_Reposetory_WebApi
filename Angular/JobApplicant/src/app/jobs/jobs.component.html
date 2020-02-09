@@ -1,8 +1,23 @@
 <p>jobs works!</p>
-<ul>
-    <li *ngFor="let job of  AllJobs">
-        Job Title: {{job.JobTitle}}
-        Job Salary: {{job.SalaryRang}}
-    </li>
-</ul>
+<table border="1">
+    <tr>
+        <td>Job Number</td>
+<td>Job Title</td>
+<td>Job Salary</td>
+<td>Apply befor</td>
+<td> Number for applicants</td>
+    </tr>
+
+
+        <tr *ngFor="let job of  AllJobs">
+
+<td>{{job.Id}}</td>
+<td>{{job.JobTitle}}</td>
+<td>{{job.SalaryRange}}</td>
+<td>{{job.Deadline}}</td>
+<td>  {{job.MaximumApplicant}}</td>
+
+        </tr>
+
+    </table>
 
